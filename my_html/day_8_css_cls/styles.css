@@ -1,0 +1,59 @@
+/* example of external styles */
+
+
+        /* RULE SETS */
+        P{
+            COLOR:orange;
+        }
+        h1{
+            color:blue;
+        }
+        /* #para1{ 
+            color:red;
+            font-style: italic;
+        }
+        #para2{
+            color:green;
+            font-weight: bolder;
+        }
+        #para3{
+            color:blue;
+            font-style: italic;
+            font-weight: bolder;
+         } */
+
+        
+         #para1{ 
+            color:red;
+        }
+        #para2{
+            color:green;
+        }
+        #para3{
+            color:blue;
+        }
+     /* class selector */
+     .italic{
+        font-style: italic;
+     }
+     .bolder{
+        font-weight: bolder;
+     }
+
+     /* universal selector */
+     *{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     }
+
+     /* precedence order
+     1.inline styles
+     2. internal styles
+     selector:
+     1.id selector
+     2.class selector, attribute selectors, pseudo-classes
+     3.element or tag selectors
+     4.external stylesheets
+     5.universal or global selector
+     
+     last rule  in the css takes the highest precedence.*/
+    

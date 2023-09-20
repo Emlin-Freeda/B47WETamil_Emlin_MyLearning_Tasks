@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Demo</title>
+
+    <!-- external styles -->
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+    <h1>CSS Demo</h1>
+    <!-- Cascadding Style Set -->
+    <h2>Different ways to use css styles</h2>
+    <ol>
+        <li>Inline CSS Styles</li>
+        <li>Internal CSS Styles</li>
+        <li>External CSS Styles</li>
+    </ol>
+<!-- Inline CSS -->
+    <p style="color: red;">This text will be in red color</p>
+    <h3 style="font-size: 42px; color: blue;">This heading will be larger</h3>
+    
+    <a href="#" style="text-decoration:wavy;">This link will have no underlines</a>
+    
+    <div style="text-align: center;">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" width="100px" alt="googlelogo"
+        style="width: 400px; border: 10px dotted green">
+    </div>
+
+    <p>
+        <span style="padding-left: 18
+        px;">This</span> will be tab spaced for the first word alone.
+
+    </p>
+
+    <!-- Internal CSS -->
+
+    <P id="para1" class="italic">This text will be in red color. Italicized</P>
+    <p id="para2" class="bolder">This text will be in Green color. Bolder</p>
+    <p id="para3" class="italic">This text will be in blue color.Italicized and bolder</p>
+<!-- 1. inline style has more priority when compare to internal 
+2. in internal style id selector has highest priority than tag selector
+3. in ruleset among several id selector the last id selector has highest priority-->
+ 
+    <!-- <style> 
+        /* RULE SETS */
+        P{
+            COLOR:orange;
+        }
+        h1{
+            color:blue;
+        }
+        #para1{
+            color:red;
+            font-style: italic;
+        }
+        #para2{
+            color:green;
+            font-weight: bolder;
+        }
+        #para3{
+            color:blue;
+            font-style: italic;
+            font-weight: bolder;
+        }
+    </style>-->
+</body>
+</html>
