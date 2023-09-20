@@ -1,0 +1,110 @@
+Task 1:
+
+1.Write a blog on Difference between HTTP1.1 vs HTTP2
+____________________________________________________________
+
+Http:
+HTTP stands for hypertext transfer protocol & it is used in client-server communication. 
+By using HTTP user sends the request to the server & the server sends the response to the user. 
+
+HTTP 1.1:
+->The first usable version of HTTP was created in 1997. 
+->Because it went through several stages of development, this first version of HTTP was called HTTP/1.1. 
+
+HTTP 2:
+->In 2015, a new version of HTTP called HTTP/2 was created.  
+->HTTP/2 is much faster and more efficient than HTTP/1.1. 
+->One of the ways in which HTTP/2 is faster is in how it prioritizes content during the loading process.
+
+Drawbacks that lead to the creation of HTTP/2: 
+->The first problem is HTTP/1.1 transfer all the requests & responses in the plain text message form. 
+->The second one is head of line blocking in which TCP connection is blocked all other requests until the response does not receive. 
+all the information related to the header file is repeated in every request.
+
+Difference between HTTP1.1 vs HTTP2:
+-->HTTP/1.1 works on the textual format and HTTP/2 works on the binary protocol
+->In HTTP/1.1 head of line blocking that blocks all the requests behind it unitll it doesn't get all resources and In HTTP/2, it allows multiplexing so one TCP connection is required for multiple requests.
+->HTTP1/1.1 uses request resource Inlining for use getting multiple pages and HTTP/2 uses PUSH frame by server that collects all multiple pages.
+->HTTP/1.1 compresses data by itself and HTTP/2 uses HPACK for data compression
+
+
+2.Write a blog about objects and its internal representation in Javascript
+______________________________________________________________________________
+
+What is Object in JavaScript?
+->JavaScript object is a non-primitive data-type that allows you to store multiple collections of data.
+7 types of primitive data types:
+   ->string, number, boolean, null, undefined, symbol, bigint
+->Booleans, Numbers, Strings can be defined as objects with the new keyword.
+->Dates, Maths, Regular expressions, Arrays ,Functions  are always objects
+
+example: 
+let car = "Hyundai";
+
+const myHonda = {
+  color: "red",
+  wheels: 4,
+  engine: { cylinders: 4, size: 2.2 },
+};
+
+3.codekata practice:
+______________________
+
+->Helps guvi learner to practice coding problems
+->quick IDE for workout problems
+->multiple programming language one platform
+->greate online editor
+
+4.Read about IP address, port, HTTP methods, MAC address
+___________________________________________________________	
+
+IP address:
+->IP stands for internet protocol. 
+->It is a unique number given to every device identified in a network. 
+->Network-connected devices make use of IP addresses, which can be either public or private. 
+->An example of an IP address is 192.158.1.38. IP addresses can range from 0.0.0.0 to 255.255.255.255. 
+In any instance, no two devices can have the same IP address when connected to a network.
+
+Port:
+->Port number is a 16-bit logical address 
+that is assigned to every application of your device and used to transmit data between computer network and application.
+->We use this to identify the processes uniquely on a machine. This number can range from 0–65535.
+Collectively, the IP address and port number form a socket address (socket number). This enables every single process to be uniquely identified over the internet.
+->Port number 0 to 1023: Reserved Ports
+->Port number 1024 to 49151: Registered Ports
+->Port number 49151 to 65535: Dynamic ports
+
+Http Methods:
+GET
+POST
+PUT
+HEAD
+DELETE
+PATCH
+OPTIONS
+CONNECT
+TRACE
+
+Important Methods:
+
+GET:
+->GET is used to request data from a specified resource.
+->GET requests can be cached,browser history,  bookmarked.
+->GET requests should never be used when dealing with sensitive data
+->GET requests have length restrictions
+
+POST:
+->POST is used to send data to a server to create/update a resource.
+->POST requests have no restrictions on data length
+
+PUT:
+PUT is used to send data to a server to create/update a resource.
+DELETE:
+The DELETE method deletes the specified resource.
+
+MAC Address:
+->It stands for Media Access Control, and also known as Physical address, hardware address, or BIA (Burned In Address).
+->It is globally unique; it means two devices cannot have the same MAC address.
+->It is represented in a hexadecimal format on each device, such as 00:0a:95:9d:67:16.
+->It is 12-digit, and 48 bits long, out of which the first 24 bits are used for OUI(Organization Unique Identifier), and 24 bits are for NIC/vendor-specific.
+->It works on the data link layer of the OSI model
